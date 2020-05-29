@@ -27,7 +27,7 @@ def bot_player(wordlist: list) -> None:
         os.system("clear") 
         if temp != "GAME OVER!!!":
             print(f"The wordlist is {temp}")
-            sleep(1)
+            sleep(0.2)
             wordlist.remove(rnd)
             count += 1
         else:
