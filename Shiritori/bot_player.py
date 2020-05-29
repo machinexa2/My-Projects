@@ -3,7 +3,8 @@ from time import *
 import shitori
 import sys
 import os
-filepath = "all_words_in_world"
+
+filepath = "rev_all_words_in_world"
 
 if len(sys.argv) == 2:
     filepath = sys.argv[1]
@@ -11,7 +12,6 @@ if len(sys.argv) == 2:
 if os.path.exists(filepath):
     wordlist_old = [line.rstrip('\n') for line in open(filepath)] 
     wordlist_new = [word for word in wordlist_old if len(word) >= 3 and not ' ' in word] 
-
 def bot_player(wordlist: list) -> None: 
     status = True
     count = 0
