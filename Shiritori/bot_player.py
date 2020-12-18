@@ -23,7 +23,6 @@ def bot_player(wordlist: list) -> None:
                 if rnd[0] == temp[-1][-1]:
                     break
         temp = obj.play(rnd)
-        os.system("clear") 
         if temp != "GAME OVER!!!":
             print(f"The wordlist is {temp}")
             sleep(0)
